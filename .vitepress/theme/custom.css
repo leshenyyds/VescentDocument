@@ -1,0 +1,76 @@
+/**
+ * 深色文档站视觉：近似 Office Tool Plus 类文档站（深灰底 + 蓝色强调）
+ */
+:root {
+  --vescent-accent: #3b82f6;
+  --vescent-accent-hover: #60a5fa;
+  --vescent-bg: #121212;
+  --vescent-bg-soft: #18181b;
+  --vescent-bg-elevated: #1e1e1e;
+  --vescent-border: #27272a;
+  --vescent-text-muted: #a1a1aa;
+}
+
+.dark {
+  --vp-c-bg: var(--vescent-bg);
+  --vp-c-bg-alt: var(--vescent-bg-soft);
+  --vp-c-bg-elv: var(--vescent-bg-elevated);
+  --vp-c-bg-soft: rgba(39, 39, 42, 0.48);
+  --vp-c-border: var(--vescent-border);
+  --vp-c-divider: var(--vescent-border);
+  --vp-c-text-1: rgba(255, 255, 255, 0.95);
+  --vp-c-text-2: var(--vescent-text-muted);
+  --vp-c-text-3: #71717a;
+
+  --vp-c-brand-1: var(--vescent-accent);
+  --vp-c-brand-2: var(--vescent-accent-hover);
+  --vp-c-brand-3: #2563eb;
+  --vp-c-brand-soft: rgba(59, 130, 246, 0.16);
+
+  --vp-sidebar-bg-color: var(--vescent-bg-soft);
+  --vp-code-bg: #27272a;
+  --vp-code-block-bg: #1a1a1d;
+  --vp-nav-bg-color: rgba(18, 18, 18, 0.85);
+  --vp-local-search-bg: var(--vescent-bg-elevated);
+}
+
+.dark .VPNavBar {
+  border-bottom: 1px solid var(--vescent-border);
+  backdrop-filter: blur(12px);
+}
+
+.dark .VPSidebar {
+  border-right: 1px solid var(--vescent-border);
+}
+
+.dark .VPDocAsideOutline .outline-link.active {
+  color: var(--vescent-accent);
+  font-weight: 600;
+}
+
+.dark div[class*='language-'] {
+  border-radius: 10px;
+  border: 1px solid var(--vescent-border);
+}
+
+.dark .vp-doc th,
+.dark .vp-doc td {
+  border-color: var(--vescent-border);
+}
+
+.dark .vp-doc tr:nth-child(2n) {
+  background-color: rgba(39, 39, 42, 0.35);
+}
+
+.dark .vp-doc h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.dark .vp-doc h2 {
+  border-top: none;
+  padding-top: 1.5rem;
+  margin-top: 2.5rem;
+  border-bottom: 1px solid var(--vescent-border);
+  padding-bottom: 0.5rem;
+}
