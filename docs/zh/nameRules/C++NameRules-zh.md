@@ -256,4 +256,4 @@ float calculateDamage(float inBaseDamage, float inMultiplier);
 
 将此规范全文下载为 **纯文本**，供 AI 代码助手使用：
 
-[:material-download: 下载 C++NameRules.txt](https://cdn.jsdelivr.net/gh/Vescent-Studio/VescentDocument@master/docs/rescourse/AIPrompts/C++NameRules.txt){download="C++NameRules.txt"}
+[:material-download: 下载 C++NameRules.txt](blob:https://github.com/7d540324-3f4d-4bc0-bfe3-ea298893914f){download="C++NameRules.txt"}
