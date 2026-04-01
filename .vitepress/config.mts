@@ -11,7 +11,7 @@ export default defineConfig({
     siteTitle: 'Vescent',
 
     outline: {
-      label: '页面目录',
+      label: '本页目录',
       level: [2, 3],
     },
 
@@ -21,7 +21,13 @@ export default defineConfig({
 
     nav: [
       { text: '指南', link: '/guide/introduction' },
-      { text: '命名规则', link: '/standards/naming-rules' },
+      {
+        text: '命名规则',
+        items: [
+          { text: '简体中文', link: '/zh/nameRules/C++NameRules-zh' },
+          { text: 'English', link: '/en/nameRules/C++NameRules-en' },
+        ],
+      },
       { text: 'API 参考', link: '/api/overview' },
       { text: '更新日志', link: '/changelog' },
     ],
@@ -37,12 +43,25 @@ export default defineConfig({
           ],
         },
       ],
-      '/standards/': [
+      '/zh/nameRules/': [
         {
           text: '命名规则',
           collapsed: false,
           items: [
-            { text: 'UE 引擎统一命名规范', link: '/standards/naming-rules' },
+            { text: 'C++ 代码规范', link: '/zh/nameRules/C++NameRules-zh' },
+            { text: '蓝图规范', link: '/zh/nameRules/BlueprintNameRules-zh' },
+            { text: '资源资产规范', link: '/zh/nameRules/AssetNameRule-zh' },
+          ],
+        },
+      ],
+      '/en/nameRules/': [
+        {
+          text: 'Naming Rules',
+          collapsed: false,
+          items: [
+            { text: 'C++ Code Conventions', link: '/en/nameRules/C++NameRules-en' },
+            { text: 'Blueprint Conventions', link: '/en/nameRules/BlueprintNameRules-en' },
+            { text: 'Asset Naming Conventions', link: '/en/nameRules/AssetNameRule-en' },
           ],
         },
       ],

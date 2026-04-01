@@ -58,6 +58,20 @@
   border-color: var(--vescent-border);
 }
 
+/* 表格列宽控制 */
+div[class*="vp-doc"] .vp-doc table {
+  table-layout: fixed !important;
+  width: 100% !important;
+}
+
+div[class*="vp-doc"] .vp-doc table th:first-child,
+div[class*="vp-doc"] .vp-doc table td:first-child {
+  width: 240px !important;
+  min-width: 240px !important;
+  max-width: 240px !important;
+  white-space: nowrap !important;
+}
+
 .dark .vp-doc tr:nth-child(2n) {
   background-color: rgba(39, 39, 42, 0.35);
 }
