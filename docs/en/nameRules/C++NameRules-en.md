@@ -246,4 +246,4 @@ namespace MyGame::Combat { ... }
 
 Download this entire naming convention as a **text prompt** for AI code assistants:
 
-[:material-download: Download C++NameRules.txt](https://cdn.jsdelivr.net/gh/Vescent-Studio/VescentDocument@master/docs/rescourse/AIPrompts/C++NameRules.txt){download="C++NameRules.txt"}
+[:material-download: Download C++NameRules.txt](https://raw.githubusercontent.com/leshenyyds/VescentDocument/master/docs/rescourse/AIPrompts/C%2B%2BNameRules.txt){download="C++NameRules.txt"}
