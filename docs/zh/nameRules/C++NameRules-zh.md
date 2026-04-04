@@ -30,13 +30,16 @@
 - **POD 枚举**：`E` 前缀 + 大驼峰，如 `ECombatState`。
 - **非 POD 枚举**：大驼峰即可。
 - **枚举值**：`枚举类型名_具体值`，段与段之间仍用大驼峰。
+> 为保持代码一致性，尽量保持POD和非POD的命名一致性，除非迫不得已需要区分
+
 
 ```cpp
-enum class EItemType : uint8
+UENUM(BlueprintType)
+enum class EElementAttributeType : uint8
 {
-    EItemType_Weapon,
-    EItemType_Consumable,
-    EItemType_Material,
+	None UMETA(DisplayName = "无"),
+	Fire UMETA(DisplayName = "火"),
+	Water UMETA(DisplayName = "水")
 };
 ```
 
@@ -47,7 +50,21 @@ enum class EItemType : uint8
   - 配置参数结构：`F` + 大驼峰 + `Config`，如 `FCharacterConfig`
 - **非 POD（不接受反射）**：大驼峰即可，如 `InnerShapeInfo`
 
----
+> 为保持代码一致性，尽量保持POD和非POD的命名一致性，除非迫不得已需要区分
+
+```cpp
+USTRUCT(BlueprintType)
+struct CYCLEOFWARPATH_API FBuffInfo : public FTableRowBase
+{
+	GENERATED_BODY()
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FName BuffId;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float BuffDuration;
+};
+```
 
 ## 变量命名
 
